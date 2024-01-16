@@ -36,4 +36,13 @@ export default function App() {
 			return { ...prevForm, [section]: updatedSection };
 		});
 	}
+
+	function handleSubmit(event) {
+		event.preventDefault();
+		!isSubmitted ? setIsSubmitted(true) : setIsSubmitted(false);
+	}
+
+	function handleFormEdit() {
+		setIsSubmitted(false);
+	}
 }
