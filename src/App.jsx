@@ -16,4 +16,5 @@ export default function App() {
 			{ company: '', position: '', from: '', until: '', resp: '' },
 		],
 	});
+	const [isSubmitted, setIsSubmitted] = useState(false);
 }
