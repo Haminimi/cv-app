@@ -45,4 +45,24 @@ export default function App() {
 	function handleFormEdit() {
 		setIsSubmitted(false);
 	}
+
+	function addEducation() {
+		setForm((prevForm) => {
+			const newEducation = [
+				...prevForm.education,
+				{ school: '', title: '', finished: '' },
+			];
+			return { ...prevForm, education: newEducation };
+		});
+	}
+
+	function addExperience() {
+		setForm((prevForm) => {
+			const newExperience = [
+				...prevForm.experience,
+				{ company: '', position: '', from: '', until: '', resp: '' },
+			];
+			return { ...prevForm, experience: newExperience };
+		});
+	}
 }
