@@ -41,6 +41,23 @@ export default function Education({
 					}
 				/>
 			</div>
+			<div className="form-field-container">
+				<label htmlFor="finished">Finished:</label>
+				<input
+					type="date"
+					id="finished"
+					autoComplete="off"
+					value={finishedValue}
+					onChange={(event) =>
+						onChange(
+							'education',
+							index,
+							'finished',
+							event.target.value
+						)
+					}
+				/>
+			</div>
 		</div>
 	);
 }
