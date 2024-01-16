@@ -180,6 +180,35 @@ export default function App() {
 							))}
 						</div>
 					</div>
+					<br />
+					<div className="submitted-section">
+						<h3>Experience</h3>
+						<div className="experience-submitted">
+							{form.experience.map((experience, index) => (
+								<div key={index}>
+									<ul>
+										<li>
+											<b>Company:</b> {experience.company}
+										</li>
+										<li>
+											<b>Position:</b>{' '}
+											{experience.position}
+										</li>
+										<li>
+											<b>From:</b> {experience.from}
+										</li>
+										<li>
+											<b>Until:</b> {experience.until}
+										</li>
+										<li>
+											<b>Responsibilities:</b>{' '}
+											{experience.resp}
+										</li>
+									</ul>
+								</div>
+							))}
+						</div>
+					</div>
 				</div>
 			)}
 		</main>
