@@ -142,6 +142,22 @@ export default function App() {
 							Edit
 						</button>
 					</div>
+					<br />
+					<div className="submitted-section">
+						<h3>Information</h3>
+						<ul>
+							<li>
+								<b>Name:</b> {form.information.name}
+							</li>
+							<li>
+								<b>Email:</b> {form.information.email}
+							</li>
+							<li>
+								<b>Number:</b> {form.information.number}
+							</li>
+						</ul>
+					</div>
+					<br />
 				</div>
 			)}
 		</main>
