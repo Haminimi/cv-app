@@ -120,6 +120,15 @@ export default function App() {
 							/>
 						))}
                         <button onClick={handleSubmit}>Submit</button>
+                        <a
+							href="https://github.com/Haminimi"
+							aria-label="GitHub"
+						>
+							<i
+								className="devicon-github-original"
+								aria-hidden="true"
+							></i>
+						</a>
                 </form>
                 </>
             )}
