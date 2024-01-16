@@ -28,6 +28,8 @@ The CV App React project provides a few of the basic resume sections for a user.
 ## Reflection
 I am very excited to work with [React](https://react.dev/). I find it powerful, extremely useful, and interesting to work with.
 
+I am aware of the danger of using an index as a key, however, I opted for it for this project because it can't produce any unwanted results.
+
 Currently, the project just takes user input and displays it. There is a lot of space for improvement, aiming to transform this project into a fully developed CV builder/generator site. However, the main goal of the project is achieved.
 ## Credits
 - Icon used for the favicon image is one of the [Profile icons created by Prosymbols Premium - Flaticon](https://www.flaticon.com/free-icons/profile)
