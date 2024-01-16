@@ -21,6 +21,18 @@ export default function Information({
 					}
 				/>
 			</div>
+			<div className="form-field-container">
+				<label htmlFor="mail">Email:</label>
+				<input
+					type="email"
+					id="mail"
+					autoComplete="off"
+					value={emailValue}
+					onChange={(event) =>
+						onChange('information', 'email', event.target.value)
+					}
+				/>
+			</div>
 		</div>
 	);
 }
