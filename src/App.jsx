@@ -98,6 +98,27 @@ export default function App() {
 								finishedValue={education.finished}
 							/>
 						))}
+                        <div className="form-section-header experience-header">
+							<h2 className="experience-h3">Experience</h2>
+							<span
+								className="material-symbols-outlined"
+								onClick={addExperience}
+							>
+								add
+							</span>
+						</div>
+						{form.experience.map((experience, index) => (
+							<Experience
+								key={index}
+								index={index}
+								onChange={handleChange}
+								companyValue={experience.company}
+								positionValue={experience.position}
+								fromValue={experience.from}
+								untilValue={experience.until}
+								respValue={experience.resp}
+							/>
+						))}
                 </form>
                 </>
             )}
