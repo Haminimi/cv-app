@@ -2,7 +2,7 @@
 ## Description
 The CV App React project provides a few of the basic resume sections for a user. [The project](https://www.theodinproject.com/lessons/node-path-react-new-cv-application) is a part of [The Odin Project](https://www.theodinproject.com/dashboard)'s React course from the [The Odin Project](https://www.theodinproject.com/dashboard)'s curriculum. The Odin Project provides a high quality web development education maintained by an open source community.
 ## Live Preview
-[The CV App]().
+[The CV App](https://cv-app-eosin.vercel.app/).
 ## Main Features
 - **Responsive Design:** The app is fully responsive, ensuring a consistent user experience across various screen sizes.
 - **Accessibility:** The page is fully accessible and it respects various accessibility recommendations, such as including sufficient color contrasts, labeling, and keyboard support.
