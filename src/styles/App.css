@@ -48,3 +48,26 @@ label {
 input {
 	width: 70%;
 }
+
+.submitted-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.submitted-h2 {
+	font-size: 40px;
+}
+
+.submitted-section {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+}
+
+.education-submitted,
+.experience-submitted {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
