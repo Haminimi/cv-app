@@ -65,4 +65,23 @@ export default function App() {
 			return { ...prevForm, experience: newExperience };
 		});
 	}
+
+    return (
+        <main>
+            {!isSubmitted ? (
+                <>
+                <h1>CV App</h1>
+				<br />
+                <form>
+                <Information
+                    onChange={handleInformationChange}
+                    nameValue={form.information.name}
+                    emailValue={form.information.email}
+                    numberValue={form.information.number}
+				/>
+                </form>
+                </>
+            )}
+        </main>
+    )
 }
