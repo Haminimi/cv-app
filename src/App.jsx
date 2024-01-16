@@ -79,6 +79,25 @@ export default function App() {
                     emailValue={form.information.email}
                     numberValue={form.information.number}
 				/>
+                <div className="form-section-header education-header">
+							<h2 className="education-h3">Education</h2>
+							<span
+								className="material-symbols-outlined"
+								onClick={addEducation}
+							>
+								add
+							</span>
+						</div>
+						{form.education.map((education, index) => (
+							<Education
+								key={index}
+								index={index}
+								onChange={handleChange}
+								schoolValue={education.school}
+								titleValue={education.title}
+								finishedValue={education.finished}
+							/>
+						))}
                 </form>
                 </>
             )}
