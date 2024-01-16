@@ -77,6 +77,23 @@ export default function Experience({
 					}
 				/>
 			</div>
+			<div className="form-field-container">
+				<label htmlFor="resp">Responsibilities:</label>
+				<input
+					type="text"
+					id="resp"
+					autoComplete="off"
+					value={respValue}
+					onChange={(event) =>
+						onChange(
+							'experience',
+							index,
+							'resp',
+							event.target.value
+						)
+					}
+				/>
+			</div>
 		</div>
 	);
 }
