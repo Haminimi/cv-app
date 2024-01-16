@@ -17,4 +17,23 @@ export default function App() {
 		],
 	});
 	const [isSubmitted, setIsSubmitted] = useState(false);
+
+	function handleInformationChange(category, fieldName, value) {
+		setForm((prevForm) => ({
+			...prevForm,
+			[category]: {
+				...prevForm[category],
+				[fieldName]: value,
+			},
+		}));
+	}
+
+	function handleChange(section, index, key, value) {
+		setForm((prevForm) => {
+			const updatedSection = [...prevForm[section]];
+			updatedSection[index][key] = value;
+
+			return { ...prevForm, [section]: updatedSection };
+		});
+	}
 }
