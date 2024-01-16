@@ -43,6 +43,40 @@ export default function Experience({
 					}
 				/>
 			</div>
+			<div className="form-field-container">
+				<label htmlFor="from">Date - from:</label>
+				<input
+					type="date"
+					id="from"
+					autoComplete="off"
+					value={fromValue}
+					onChange={(event) =>
+						onChange(
+							'experience',
+							index,
+							'from',
+							event.target.value
+						)
+					}
+				/>
+			</div>
+			<div className="form-field-container">
+				<label htmlFor="to">Date - until:</label>
+				<input
+					type="date"
+					id="to"
+					autoComplete="off"
+					value={untilValue}
+					onChange={(event) =>
+						onChange(
+							'experience',
+							index,
+							'until',
+							event.target.value
+						)
+					}
+				/>
+			</div>
 		</div>
 	);
 }
