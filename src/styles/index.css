@@ -75,3 +75,16 @@ body {
 	min-width: 320px;
 	min-height: 100vh;
 }
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: #646cff;
+}
+
+a:active {
+	color: #646cff;
+}
