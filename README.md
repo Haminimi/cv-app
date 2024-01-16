@@ -18,6 +18,7 @@ The CV App React project provides a few of the basic resume sections for a user.
 
 **Tools**
 - Vite
+- Vercel
 - Git
 - Visual Studio Code
 ## Covered Topics
