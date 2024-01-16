@@ -66,20 +66,20 @@ export default function App() {
 		});
 	}
 
-    return (
-        <main>
-            {!isSubmitted ? (
-                <>
-                <h1>CV App</h1>
-				<br />
-                <form>
-                <Information
-                    onChange={handleInformationChange}
-                    nameValue={form.information.name}
-                    emailValue={form.information.email}
-                    numberValue={form.information.number}
-				/>
-                <div className="form-section-header education-header">
+	return (
+		<main>
+			{!isSubmitted ? (
+				<>
+					<h1>CV App</h1>
+					<br />
+					<form>
+						<Information
+							onChange={handleInformationChange}
+							nameValue={form.information.name}
+							emailValue={form.information.email}
+							numberValue={form.information.number}
+						/>
+						<div className="form-section-header education-header">
 							<h2 className="education-h3">Education</h2>
 							<span
 								className="material-symbols-outlined"
@@ -98,7 +98,7 @@ export default function App() {
 								finishedValue={education.finished}
 							/>
 						))}
-                        <div className="form-section-header experience-header">
+						<div className="form-section-header experience-header">
 							<h2 className="experience-h3">Experience</h2>
 							<span
 								className="material-symbols-outlined"
@@ -119,8 +119,8 @@ export default function App() {
 								respValue={experience.resp}
 							/>
 						))}
-                        <button onClick={handleSubmit}>Submit</button>
-                        <a
+						<button onClick={handleSubmit}>Submit</button>
+						<a
 							href="https://github.com/Haminimi"
 							aria-label="GitHub"
 						>
@@ -129,9 +129,21 @@ export default function App() {
 								aria-hidden="true"
 							></i>
 						</a>
-                </form>
-                </>
-            )}
-        </main>
-    )
+					</form>
+				</>
+			) : (
+				<div className="submitted-container">
+					<div className="submitted-header">
+						<h2 className="submitted-h2">Submitted</h2>
+						<button
+							onClick={handleFormEdit}
+							className="edit-button"
+						>
+							Edit
+						</button>
+					</div>
+				</div>
+			)}
+		</main>
+	);
 }
