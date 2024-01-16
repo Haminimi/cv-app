@@ -71,3 +71,22 @@ input {
 	flex-direction: column;
 	gap: 20px;
 }
+
+.material-symbols-outlined {
+	font-size: 35px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	line-height: 24px;
+}
+
+.devicon-github-original {
+	font-size: 40px;
+	cursor: pointer;
+	will-change: filter;
+	transition: all 300ms;
+}
+
+.devicon-github-original:hover {
+	filter: drop-shadow(0 0 2em #646cffaa);
+}
