@@ -33,6 +33,18 @@ export default function Information({
 					}
 				/>
 			</div>
+			<div className="form-field-container">
+				<label htmlFor="tel">Number:</label>
+				<input
+					type="tel"
+					id="tel"
+					autoComplete="off"
+					value={numberValue}
+					onChange={(event) =>
+						onChange('information', 'number', event.target.value)
+					}
+				/>
+			</div>
 		</div>
 	);
 }
