@@ -158,6 +158,28 @@ export default function App() {
 						</ul>
 					</div>
 					<br />
+					<div className="submitted-section">
+						<h3>Education</h3>
+						<div className="education-submitted">
+							{form.education.map((education, index) => (
+								<div key={index}>
+									<ul>
+										<li>
+											<b>School:</b> {education.school}
+										</li>
+										<li>
+											<b>Title of study:</b>{' '}
+											{education.title}
+										</li>
+										<li>
+											<b>Finished:</b>{' '}
+											{education.finished}{' '}
+										</li>
+									</ul>
+								</div>
+							))}
+						</div>
+					</div>
 				</div>
 			)}
 		</main>
