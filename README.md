@@ -13,14 +13,13 @@ The CV App React project provides a few of the basic resume sections for a user.
 ## Tech
 **The project is built with:**
 - HTML
-- Vanilla CSS
 - React
+- Vanilla CSS
 
 **Tools**
-- Vite
-- Vercel
-- Git
 - Visual Studio Code
+- Git
+- Vite
 ## Covered Topics
 **This section mentions the main topics covered during project work and prior lessons**
 - React Basics - JSX, props, state
@@ -31,6 +30,8 @@ I am very excited to work with [React](https://react.dev/). I find it powerful, 
 I am aware of the danger of using an index as a key, however, I opted for it for this project because it can't produce any unwanted results.
 
 Currently, the project just takes user input and displays it. There is a lot of space for improvement, aiming to transform this project into a fully developed CV builder/generator site. However, the main goal of the project is achieved.
+
+And the project could definitely benefit from some styling. 😂
 ## Credits
 - Icon used for the favicon image is one of the [Profile icons created by Prosymbols Premium - Flaticon](https://www.flaticon.com/free-icons/profile)
 ## Author
@@ -38,5 +39,4 @@ Currently, the project just takes user input and displays it. There is a lot of 
 - [Exercism](https://exercism.org/profiles/Haminimi)
 - [LeetCode](https://leetcode.com/Haminimi/)
 - Email: haminimi.dev@gmail.com
-- LinkedIn: A profile will be available at the time I am job ready
 ## Happy coding!
